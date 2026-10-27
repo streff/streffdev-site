@@ -134,7 +134,7 @@ def page(path, title, description, body, nav_key=None):
       <img class="logo-light" src="{p}brand/streffdev-logo.svg" alt="streffdev" width="120" height="21">
       <img class="logo-dark" src="{p}brand/streffdev-logo-on-dark.svg" alt="" width="120" height="21">
       <p class="legal-line">{v('company_name')} is a private limited company registered in Scotland,
-      company number {v('company_number')}. Registered office: {v('registered_office')}.</p>
+      company number {v('company_number')}.</p>
     </div>
     <nav aria-label="Legal">
       <ul>
@@ -309,12 +309,10 @@ def build_pages():
 <dl class="facts">
   <dt>Registered name</dt><dd>{v('company_name')}</dd>
   <dt>Trading name</dt><dd>streffdev</dd>
-  <dt>Company type</dt><dd>Private company limited by shares</dd>
   <dt>Registered in</dt><dd>Scotland</dd>
   <dt>Company number</dt><dd>{v('company_number')}</dd>
   <dt>Incorporated</dt><dd>{v('incorporated')}</dd>
   <dt>Registered office</dt><dd>{v('registered_office')}</dd>
-  {vat_line}
   {ico_line}
   <dt>Email</dt><dd>{email()}</dd>
 </dl>
