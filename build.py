@@ -42,7 +42,13 @@ def v(key):
     if val.startswith("["):
         placeholders_found.add(f"{key} = {val}")
         return f'<span class="todo">{html.escape(val)}</span>'
-    return html.escape(val)
+    # keep UK postcodes (e.g. KY7 5DP) together on one line
+    return re.sub(r"\b([A-Z]{1,2}\d[A-Z\d]?) (\d[A-Z]{2})\b", r"\1&nbsp;\2", html.escape(val))
+
+
+def address_lines():
+    """Registered office with one line per comma-separated part."""
+    return "<br>".join(html.escape(part.strip()) for part in CONFIG["registered_office"].split(","))
 
 
 def email(user_key="email_user"):
@@ -284,7 +290,7 @@ def build_pages():
   <dt>General and project enquiries</dt><dd>{email()}</dd>
   <dt>App support</dt><dd>{email()}</dd>
   <dt>Privacy and data requests</dt><dd>{email('privacy_email_user')}</dd>
-  <dt>Post</dt><dd>{v('company_name')}<br>{v('registered_office')}</dd>
+  <dt>Post</dt><dd>{v('company_name')}<br>{address_lines()}</dd>
 </dl>
 <h2>About a project</h2>
 <p>It helps to include a sentence or two on what you need, who will use it, and any deadline you're working to. There's no charge for an initial conversation.</p>
