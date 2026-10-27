@@ -1,0 +1,5 @@
+fontdl/
+*.zip
+__pycache__/
+shot.py
+make_png.py
