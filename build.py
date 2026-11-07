@@ -180,10 +180,10 @@ def build_pages():
 </div>
 
 <section class="app" aria-labelledby="dt">
-  <div class="app-mark" aria-hidden="true">Dt</div>
+  <img class="app-mark" src="assets/apps/dosetempo.svg" alt="" width="72" height="72">
   <div>
     <h2 id="dt">DoseTempo</h2>
-    <p class="status">Coming soon to Android and iPhone</p>
+    <p class="status">Available now on <a href="https://play.google.com/store/apps/details?id=com.streffdev.dosetempo">Google Play</a> · coming soon to iPhone</p>
     <p>A medication reminder app built around real-world dosing: medicines taken every few hours, not just at fixed times of day. Everything stays on your phone.</p>
     <p><a href="apps.html#dosetempo">More about DoseTempo</a></p>
   </div>
@@ -233,10 +233,10 @@ def build_pages():
 <p class="lede">Apps designed, built and published by {v('company_name')}.</p>
 
 <section class="app" id="dosetempo" aria-labelledby="dt">
-  <div class="app-mark" aria-hidden="true">Dt</div>
+  <img class="app-mark" src="assets/apps/dosetempo.svg" alt="" width="72" height="72">
   <div class="prose">
     <h2 id="dt">DoseTempo</h2>
-    <p class="status">Coming soon to Google Play and the App Store</p>
+    <p class="status">Available now on Google Play · coming soon to the App Store</p>
     <p>DoseTempo reminds you when your next dose is due. It was built for people juggling several medicines on different schedules, including ones taken every few hours rather than at set times of day.</p>
     <ul>
       <li>Reminders at any interval, from every few hours to every few days.</li>
@@ -247,6 +247,7 @@ def build_pages():
     </ul>
     <p>Free for up to four medicines. A single one-off purchase of £2.99 unlocks unlimited medicines, PDF dose reports for your GP or pharmacist, stock tracking with repeat-prescription warnings, and tapering plans. There is no subscription.</p>
     <p class="note">DoseTempo does not give medical advice, calculate doses or check interactions. Always follow your doctor's or pharmacist's instructions.</p>
+    <p class="actions"><a class="button" href="https://play.google.com/store/apps/details?id=com.streffdev.dosetempo">Get it on Google Play</a></p>
     <p><a href="https://www.dosetempo.co.uk/">Visit dosetempo.co.uk</a> or read the <a href="https://www.dosetempo.co.uk/privacy">DoseTempo privacy policy</a>.</p>
   </div>
 </section>

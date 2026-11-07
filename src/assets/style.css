@@ -132,10 +132,7 @@ main { padding: 3.5rem 0 5rem; }
   background: var(--surface); border: 1px solid var(--rule); border-radius: 14px;
   padding: 2rem; margin-top: 3.5rem;
 }
-.app-mark {
-  width: 4.5rem; height: 4.5rem; border-radius: 1rem; background: var(--thistle-soft);
-  display: grid; place-items: center; font-family: var(--mono); font-weight: 800; font-size: 1.6rem; color: var(--thistle);
-}
+.app-mark { width: 4.5rem; height: 4.5rem; border-radius: 1rem; display: block; }
 .app h2 { margin-top: 0; }
 .app .status { font-family: var(--mono); font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
 @media (max-width: 560px) { .app { grid-template-columns: 1fr; padding: 1.5rem; } }
